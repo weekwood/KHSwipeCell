@@ -25,7 +25,6 @@
 
 
 #import "KHTableViewCell.h"
-#import <PureLayout/PureLayout.h>
 
 @interface KHTableViewCell ()
 @property (nonatomic, strong) UILabel *titleLabel;
@@ -46,25 +45,35 @@
 - (UILabel *)titleLabel
 {
     if (!_titleLabel) {
-        _titleLabel = [UILabel newAutoLayoutView];
+//        _titleLabel = [UILabel newAutoLayoutView];
+        _titleLabel = [[UILabel alloc] init];
+        _titleLabel.frame = CGRectMake(8.f, 8.f, 200.f, 30.f);
         _titleLabel.numberOfLines = 0;
         _titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        _titleLabel.textColor = [UIColor blackColor];
     }
     return _titleLabel;
 }
 
-- (void)updateConstraints
+- (void)layoutSubviews
 {
-    [super updateConstraints];
+    [super layoutSubviews];
     
-    if (!self.constraintsSetup) {
-        [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:10];
-        [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeLeading withInset:10];
-        [self.titleLabel autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self.topContentView withMultiplier:0.9];
-        
-        self.constraintsSetup = YES;
-    }
+    _titleLabel.frame = self.topContentView.bounds;
 }
+
+//- (void)updateConstraints
+//{
+//    [super updateConstraints];
+//    
+//    if (!self.constraintsSetup) {
+//        [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:10];
+//        [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeLeading withInset:10];
+//        [self.titleLabel autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self.topContentView withMultiplier:0.9];
+//        
+//        self.constraintsSetup = YES;
+//    }
+//}
 
 - (void)configureCellWithTitle:(NSString *)title
 {

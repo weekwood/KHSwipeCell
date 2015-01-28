@@ -36,7 +36,9 @@
     
     [self resetData];
     
-    [self.tableView registerClass:[KHTableViewCell class] forCellReuseIdentifier:kKHTableViewCellReuseIdentifier];
+//    [self.tableView registerClass:[KHTableViewCell class] forCellReuseIdentifier:kKHTableViewCellReuseIdentifier];
+    
+    self.tableView.tableFooterView = [[UIView alloc] init];
     
     UIBarButtonItem *resetButton = [[UIBarButtonItem alloc] initWithTitle:@"Reset" style:UIBarButtonItemStylePlain target:self action:@selector(resetData)];
     self.navigationItem.rightBarButtonItem = resetButton;
@@ -102,16 +104,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     KHTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kKHTableViewCellReuseIdentifier];
+    if (!cell) {
+        cell = [[KHTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kKHTableViewCellReuseIdentifier];
+        cell.selectionStyle  = UITableViewCellSelectionStyleNone;
+        cell.textLabel.font = [UIFont systemFontOfSize:16.f];
+        cell.delegate = self;
+    }
     
     [cell addActionButtons:[self leftButtons] withButtonWidth:kKHButtonWidth withButtonPosition:KHButtonLocationLeft];
     [cell addActionButtons:[self rightButtons] withButtonWidth:kKHButtonWidth withButtonPosition:KHButtonLocationRight];
-    
-    cell.delegate = self;
-    
+//    cell.textLabel.text = self.tableData[indexPath.row];
+//
     [cell configureCellWithTitle:self.tableData[indexPath.row]];
-    [cell setNeedsLayout];
-    [cell setNeedsUpdateConstraints];
-    [cell updateConstraintsIfNeeded];
+//    [cell setNeedsLayout];
+//    [cell setNeedsUpdateConstraints];
+//    [cell updateConstraintsIfNeeded];
     
     return cell;
 }

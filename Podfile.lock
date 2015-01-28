@@ -1,10 +1,10 @@
 PODS:
-  - PureLayout (2.0.4)
+  - SVPullToRefresh (0.4.1)
 
 DEPENDENCIES:
-  - PureLayout
+  - SVPullToRefresh (~> 0.4.1)
 
 SPEC CHECKSUMS:
-  PureLayout: ddf4fedf7e2f5984f972bbd2205dda4fc3418347
+  SVPullToRefresh: d5161ebc833a38b465364412e5e307ca80bbb190
 
 COCOAPODS: 0.35.0
