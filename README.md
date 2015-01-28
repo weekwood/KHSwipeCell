@@ -2,6 +2,8 @@
 
 An easy-to-use UITableViewCell subclass that implements a swipeable content view which exposes utility buttons (similar to iOS 7 Mail Application)
 
+![](https://raw.githubusercontent.com/weekwood/KHSwipeCell/master/gif/KHSwipeCell.gif)
+
 ## Usage
 
 In your Podfile:
@@ -18,3 +20,4 @@ Khan.Lau
 di wu
 
 ## License
+MIT
