@@ -1,7 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '7.0'
+platform :ios, '5.1.1'
 
-pod 'PureLayout'
-
-
+pod 'SVPullToRefresh', '~> 0.4.1'
