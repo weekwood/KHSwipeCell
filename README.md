@@ -12,6 +12,10 @@ In your Podfile:
 ``` 
 Or just clone this repo and manually add source to project
 
+## Requirements
+* iOS 5.1+
+* ARC
+
 ## Author
 
 Khan.Lau
@@ -21,4 +25,4 @@ Khan.Lau
 di wu
 
 ## License
-MIT
+KHSwipeCell is released under an [MIT License](http://opensource.org/licenses/MIT). See LICENSE for details.
