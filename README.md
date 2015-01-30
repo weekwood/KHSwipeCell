@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/weekwood/KHSwipeCell.png?label=ready&title=Ready)](https://waffle.io/weekwood/KHSwipeCell)
 # KHSwipeCell
 
 An easy-to-use UITableViewCell subclass that implements a swipeable content view which exposes utility buttons (similar to iOS 7 Mail Application)
