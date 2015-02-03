@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5044E68E1A80F3B9006BAFDD /* KHActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5044E68B1A80F3B9006BAFDD /* KHActionButton.m */; };
+		5044E68F1A80F3B9006BAFDD /* KHSwipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5044E68D1A80F3B9006BAFDD /* KHSwipeCell.m */; };
 		6CCBCAC51A78A1C10016ACBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCAC41A78A1C10016ACBE /* main.m */; };
 		6CCBCAC81A78A1C10016ACBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCAC71A78A1C10016ACBE /* AppDelegate.m */; };
 		6CCBCACB1A78A1C10016ACBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCACA1A78A1C10016ACBE /* ViewController.m */; };
@@ -14,8 +16,6 @@
 		6CCBCAD01A78A1C10016ACBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CCBCACF1A78A1C10016ACBE /* Images.xcassets */; };
 		6CCBCAD31A78A1C10016ACBE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCBCAD11A78A1C10016ACBE /* LaunchScreen.xib */; };
 		6CCBCADF1A78A1C10016ACBE /* KHSwipeCellExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCADE1A78A1C10016ACBE /* KHSwipeCellExampleTests.m */; };
-		6CCBCAED1A78A4460016ACBE /* KHActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCAEA1A78A4460016ACBE /* KHActionButton.m */; };
-		6CCBCAEE1A78A4460016ACBE /* KHSwipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCAEC1A78A4460016ACBE /* KHSwipeCell.m */; };
 		6CCBCAF11A78A47E0016ACBE /* KHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCAF01A78A47E0016ACBE /* KHTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5044E68A1A80F3B9006BAFDD /* KHActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHActionButton.h; sourceTree = "<group>"; };
+		5044E68B1A80F3B9006BAFDD /* KHActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHActionButton.m; sourceTree = "<group>"; };
+		5044E68C1A80F3B9006BAFDD /* KHSwipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHSwipeCell.h; sourceTree = "<group>"; };
+		5044E68D1A80F3B9006BAFDD /* KHSwipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHSwipeCell.m; sourceTree = "<group>"; };
 		6CCBCABF1A78A1C10016ACBE /* KHSwipeCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHSwipeCellExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCBCAC31A78A1C10016ACBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CCBCAC41A78A1C10016ACBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,10 +47,6 @@
 		6CCBCAD81A78A1C10016ACBE /* KHSwipeCellExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KHSwipeCellExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCBCADD1A78A1C10016ACBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CCBCADE1A78A1C10016ACBE /* KHSwipeCellExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KHSwipeCellExampleTests.m; sourceTree = "<group>"; };
-		6CCBCAE91A78A4460016ACBE /* KHActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHActionButton.h; sourceTree = "<group>"; };
-		6CCBCAEA1A78A4460016ACBE /* KHActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHActionButton.m; sourceTree = "<group>"; };
-		6CCBCAEB1A78A4460016ACBE /* KHSwipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHSwipeCell.h; sourceTree = "<group>"; };
-		6CCBCAEC1A78A4460016ACBE /* KHSwipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHSwipeCell.m; sourceTree = "<group>"; };
 		6CCBCAEF1A78A47E0016ACBE /* KHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHTableViewCell.h; sourceTree = "<group>"; };
 		6CCBCAF01A78A47E0016ACBE /* KHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +69,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5044E6891A80F3B9006BAFDD /* KHSwipeCell */ = {
+			isa = PBXGroup;
+			children = (
+				5044E68A1A80F3B9006BAFDD /* KHActionButton.h */,
+				5044E68B1A80F3B9006BAFDD /* KHActionButton.m */,
+				5044E68C1A80F3B9006BAFDD /* KHSwipeCell.h */,
+				5044E68D1A80F3B9006BAFDD /* KHSwipeCell.m */,
+			);
+			path = KHSwipeCell;
+			sourceTree = "<group>";
+		};
 		6CCBCAB61A78A1C10016ACBE = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +102,7 @@
 		6CCBCAC11A78A1C10016ACBE /* KHSwipeCellExample */ = {
 			isa = PBXGroup;
 			children = (
-				6CCBCAE81A78A4460016ACBE /* KHSwipeCell */,
+				5044E6891A80F3B9006BAFDD /* KHSwipeCell */,
 				6CCBCAC61A78A1C10016ACBE /* AppDelegate.h */,
 				6CCBCAC71A78A1C10016ACBE /* AppDelegate.m */,
 				6CCBCAC91A78A1C10016ACBE /* ViewController.h */,
@@ -130,17 +141,6 @@
 				6CCBCADD1A78A1C10016ACBE /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6CCBCAE81A78A4460016ACBE /* KHSwipeCell */ = {
-			isa = PBXGroup;
-			children = (
-				6CCBCAE91A78A4460016ACBE /* KHActionButton.h */,
-				6CCBCAEA1A78A4460016ACBE /* KHActionButton.m */,
-				6CCBCAEB1A78A4460016ACBE /* KHSwipeCell.h */,
-				6CCBCAEC1A78A4460016ACBE /* KHSwipeCell.m */,
-			);
-			path = KHSwipeCell;
 			sourceTree = "<group>";
 		};
 		7B57D7A2500DD77BA7F1D4EA /* Frameworks */ = {
@@ -251,11 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CCBCAF11A78A47E0016ACBE /* KHTableViewCell.m in Sources */,
-				6CCBCAED1A78A4460016ACBE /* KHActionButton.m in Sources */,
 				6CCBCACB1A78A1C10016ACBE /* ViewController.m in Sources */,
 				6CCBCAC81A78A1C10016ACBE /* AppDelegate.m in Sources */,
-				6CCBCAEE1A78A4460016ACBE /* KHSwipeCell.m in Sources */,
+				5044E68E1A80F3B9006BAFDD /* KHActionButton.m in Sources */,
 				6CCBCAC51A78A1C10016ACBE /* main.m in Sources */,
+				5044E68F1A80F3B9006BAFDD /* KHSwipeCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

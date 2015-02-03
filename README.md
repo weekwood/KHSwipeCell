@@ -1,5 +1,6 @@
-[![Stories in Ready](https://badge.waffle.io/weekwood/KHSwipeCell.png?label=ready&title=Ready)](https://waffle.io/weekwood/KHSwipeCell)
 # KHSwipeCell
+
+[![Stories in Ready](https://badge.waffle.io/weekwood/KHSwipeCell.png?label=ready&title=Ready)](https://waffle.io/weekwood/KHSwipeCell)
 
 An easy-to-use UITableViewCell subclass that implements a swipeable content view which exposes utility buttons (similar to iOS 7 Mail Application)
 
@@ -9,8 +10,8 @@ An easy-to-use UITableViewCell subclass that implements a swipeable content view
 
 In your Podfile:
 ```
-  pod 'KHSwipeCell', '~> 0.1.0'
-``` 
+  pod 'KHSwipeCell', '~> 0.2.0'
+```
 Or just clone this repo and manually add source to project
 
 ## Requirements
