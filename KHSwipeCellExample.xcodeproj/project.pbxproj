@@ -17,7 +17,6 @@
 		6CCBCAED1A78A4460016ACBE /* KHActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCAEA1A78A4460016ACBE /* KHActionButton.m */; };
 		6CCBCAEE1A78A4460016ACBE /* KHSwipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCAEC1A78A4460016ACBE /* KHSwipeCell.m */; };
 		6CCBCAF11A78A47E0016ACBE /* KHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCAF01A78A47E0016ACBE /* KHTableViewCell.m */; };
-		A17A58462498695A3819F28F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD718278AECB119073D7D0B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CD718278AECB119073D7D0B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		614A59503FA9D3E3F0FD2A5C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6CCBCABF1A78A1C10016ACBE /* KHSwipeCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHSwipeCellExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCBCAC31A78A1C10016ACBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CCBCAC41A78A1C10016ACBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,7 +49,6 @@
 		6CCBCAEC1A78A4460016ACBE /* KHSwipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHSwipeCell.m; sourceTree = "<group>"; };
 		6CCBCAEF1A78A47E0016ACBE /* KHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHTableViewCell.h; sourceTree = "<group>"; };
 		6CCBCAF01A78A47E0016ACBE /* KHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHTableViewCell.m; sourceTree = "<group>"; };
-		DACFB6A7A7146C3B5FFDA710 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A17A58462498695A3819F28F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,22 +69,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2AFA206A44E154613CF96AB2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				614A59503FA9D3E3F0FD2A5C /* Pods.debug.xcconfig */,
-				DACFB6A7A7146C3B5FFDA710 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6CCBCAB61A78A1C10016ACBE = {
 			isa = PBXGroup;
 			children = (
 				6CCBCAC11A78A1C10016ACBE /* KHSwipeCellExample */,
 				6CCBCADB1A78A1C10016ACBE /* KHSwipeCellExampleTests */,
 				6CCBCAC01A78A1C10016ACBE /* Products */,
-				2AFA206A44E154613CF96AB2 /* Pods */,
 				7B57D7A2500DD77BA7F1D4EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -161,7 +146,6 @@
 		7B57D7A2500DD77BA7F1D4EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0CD718278AECB119073D7D0B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,11 +157,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CCBCAE21A78A1C10016ACBE /* Build configuration list for PBXNativeTarget "KHSwipeCellExample" */;
 			buildPhases = (
-				B44C312926D5DE19790EABAF /* Check Pods Manifest.lock */,
 				6CCBCABB1A78A1C10016ACBE /* Sources */,
 				6CCBCABC1A78A1C10016ACBE /* Frameworks */,
 				6CCBCABD1A78A1C10016ACBE /* Resources */,
-				80937F8576BBFD001E0A1039 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,39 +244,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		80937F8576BBFD001E0A1039 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B44C312926D5DE19790EABAF /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6CCBCABB1A78A1C10016ACBE /* Sources */ = {
@@ -426,7 +375,6 @@
 		};
 		6CCBCAE31A78A1C10016ACBE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 614A59503FA9D3E3F0FD2A5C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = KHSwipeCellExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
@@ -437,7 +385,6 @@
 		};
 		6CCBCAE41A78A1C10016ACBE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DACFB6A7A7146C3B5FFDA710 /* Pods.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = KHSwipeCellExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
