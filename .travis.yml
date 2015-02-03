@@ -6,4 +6,4 @@ before_install:
 - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 
 script:
-- xctool clean build test --project Example/KHSwipeCellExample.xcodeproj -scheme KHSwipeCellExample -sdk iphonesimulator7.1 ONLY_ACTIVE_ARCH=NO
+- xctool clean build test --project Example/KHSwipeCellExample.xcodeproj -scheme "KHSwipeCellExample" -sdk iphonesimulator7.1 ONLY_ACTIVE_ARCH=NO
