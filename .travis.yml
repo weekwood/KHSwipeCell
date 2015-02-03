@@ -1,9 +1,4 @@
 language: objective-c
 
-before_install:
-- export LANG=en_US.UTF-8
-- brew update
-- if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
-
-script:
-- xctool clean build test --project Example/KHSwipeCellExample.xcodeproj -scheme "KHSwipeCellExample" -sdk iphonesimulator7.1 ONLY_ACTIVE_ARCH=NO
+xcode_project: Example/KHSwipeCellExample.xcodeproj
+xcode_scheme: KHSwipeCellExample
