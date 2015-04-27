@@ -544,6 +544,27 @@ typedef NS_ENUM(NSUInteger, KHSwipeDirection) {
     
 }
 
+
+/**如果非左右按钮状态, 触摸手势控制权交给上一层*/
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    if ([gestureRecognizer isKindOfClass:[UITapGestureRecognizer class]]) {
+        
+        if ([touch.view isEqual:self.topContentView] && self.topContentView.frame.origin.x == 0) {
+            return NO;
+        } else {
+            return YES;
+        }
+        
+    } else if ([gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]] ){
+        
+        return YES;
+    } else {
+        return YES;
+    }
+}
+
+
+
 /**
  Helper method that handles pinning the left/right most button to the top view and also the panning of all the buttons.
  */
