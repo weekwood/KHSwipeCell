@@ -4,8 +4,7 @@
 
 ![travis](https://travis-ci.org/weekwood/KHSwipeCell.svg?branch=master)
 [![CocoaPods](https://img.shields.io/cocoapods/v/KHSwipeCell.svg)]()
-support iOS 5.0 ~ iOS 8.1
-tested on iOS 5.11 iTouch 4, iOS 7.1 iPhone 4s, iOS 8.1 iPhone 5s
+
 An easy-to-use UITableViewCell subclass that implements a swipeable content view which exposes utility buttons (similar to iOS 7 Mail Application)
 
 #demo pic
@@ -20,8 +19,10 @@ In your Podfile:
 Or just clone this repo and manually add source to project
 
 ## Requirements
-* iOS 5.1+
+* iOS 5.0+
 * ARC
+* Tested on iOS 5.11 iTouch 4, iOS 7.1 iPhone 4s, iOS 8.1 iPhone 5s
+
 
 ## Author
 
